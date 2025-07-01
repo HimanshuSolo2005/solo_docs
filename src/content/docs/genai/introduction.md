@@ -1,9 +1,7 @@
 ---
-title: Here It Begins..
+title: Introduction to Course
 description: Overview of Generative AI, Large Language Models, and Retrieval-Augmented Generation (RAG).
 ---
-
-# Introduction to Course
 
 Welcome to the **Building RAG Agents with LLMs** course. This training provides a comprehensive guide to designing, implementing, and evaluating retrieval-augmented systems that combine the power of Large Language Models (LLMs) with retrieval pipelines.
 

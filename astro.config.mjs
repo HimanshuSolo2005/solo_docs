@@ -14,6 +14,8 @@ export default defineConfig({
 					label: 'Generative AI',
 					items: [
 						{ label: 'Introduction', link: '/genai/introduction/' },
+						{ label: 'Environment-Setup', link: '/genai/environment-setup/' },
+						{ label: 'LLM Services', link: '/genai/llm-services/' },
 					],
 				},
 
