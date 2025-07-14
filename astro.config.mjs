@@ -11,14 +11,17 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Home', link: '/' },
 				{
-					label: 'Generative AI',
+					label: 'DP Patterns',
 					items: [
-						{ label: 'Introduction', link: '/genai/introduction/' },
-						{ label: 'Environment-Setup', link: '/genai/environment-setup/' },
-						{ label: 'LLM Services', link: '/genai/llm-services/' },
+						{ label: 'Pattern 1', link: '/dp/group1/' },
 					],
 				},
-
+				{
+				label: 'Reverse Tracing Question',
+				items: [
+					{ label: 'Reverse Tracing Question', link: '/reversetechnique/process_string_explanation/' },
+				],
+				},
 
 			],
 		}),
