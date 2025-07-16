@@ -1,6 +1,6 @@
 ---
 title: Approach 1 - Using an Extra Array
-description: Used Reverse-Technique and simulation technique
+description: using extra array
 ---
 
 ## 📘 Problem Statement
@@ -46,6 +46,31 @@ Then copy `rotated` into `nums`.
 
 ---
 
+### 💻 Code Snippet:
+
+```cpp
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();         // Step 1: Get the size of the array
+        k = k % n;                   // Step 2: Handle cases where k > n
+        vector<int> rotated(n);      // Step 3: Create a new array of same size
+
+        for (int i = 0; i < n; i++) {
+            // Step 4: Calculate new index and assign
+            rotated[(i + k) % n] = nums[i];
+        }
+
+        for (int i = 0; i < n; i++) {
+            // Step 5: Copy back to original array
+            nums[i] = rotated[i];
+        }        
+    }
+};
+```
+
+---
+
 ### ⏱️ Time & Space Complexity:
 | Type            | Complexity |
 |-----------------|------------|
@@ -77,25 +102,3 @@ Use this approach when:
 **Input:**  
 `nums = [1, 2, 3, 4, 5, 6, 7]`, `k = 3`
 
-**Process:**
-- C++ Code
-
-```cpp
-class Solution {
-public:
-    void rotate(vector<int>& nums, int k) {
-        int n = nums.size();         // Step 1: Get the size of the array
-        k = k % n;                   // Step 2: Handle cases where k > n
-        vector<int> rotated(n);      // Step 3: Create a new array of same size
-
-        for (int i = 0; i < n; i++) {
-            // Step 4: Calculate new index and assign
-            rotated[(i + k) % n] = nums[i];
-        }
-
-        for (int i = 0; i < n; i++) {
-            // Step 5: Copy back to original array
-            nums[i] = rotated[i];
-        }        
-    }
-};

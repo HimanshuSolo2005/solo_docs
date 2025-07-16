@@ -26,6 +26,9 @@ export default defineConfig({
 				label: 'Rotated Array',
 				items: [
 					{ label: 'Approach 1', link: '/rotatedarray/approach1/' },
+					{ label: 'Approach 2', link: '/rotatedarray/approach2/' },
+					{ label: 'Approach 3 - No Extra Space', link: '/rotatedarray/approach3/' },
+
 				],
 				},
 
