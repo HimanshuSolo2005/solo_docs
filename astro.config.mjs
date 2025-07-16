@@ -22,6 +22,12 @@ export default defineConfig({
 					{ label: 'Reverse Tracing Question', link: '/reversetechnique/process_string_explanation/' },
 				],
 				},
+				{
+				label: 'Rotated Array',
+				items: [
+					{ label: 'Approach 1', link: '/rotatedarray/approach1/' },
+				],
+				},
 
 			],
 		}),
